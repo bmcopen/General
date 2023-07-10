@@ -1,0 +1,345 @@
+openBmc Images :
+@@@@@@@@@@@@@@@@@@@@@@@@@
+aspeed-ast2500-evb--6.1.34+git0+aa3bee4aa1-r0-evb-ast2500-20230710101918.dtb
+aspeed-ast2500-evb-evb-ast2500.dtb
+aspeed-ast2500-evb.dtb
+core-image-minimal-evb-ast2500-20230710101918.qemuboot.conf
+core-image-minimal-evb-ast2500-20230710101918.rootfs.manifest
+core-image-minimal-evb-ast2500-20230710101918.rootfs.squashfs-xz
+core-image-minimal-evb-ast2500-20230710101918.spdx.tar.zst
+core-image-minimal-evb-ast2500-20230710101918.static.mtd
+core-image-minimal-evb-ast2500-20230710101918.static.mtd.all.tar
+core-image-minimal-evb-ast2500-20230710101918.static.mtd.tar
+core-image-minimal-evb-ast2500-20230710101918.testdata.json
+core-image-minimal-evb-ast2500.jffs2
+core-image-minimal-evb-ast2500.manifest
+core-image-minimal-evb-ast2500.qemuboot.conf
+core-image-minimal-evb-ast2500.spdx.tar.zst
+core-image-minimal-evb-ast2500.squashfs-xz
+core-image-minimal-evb-ast2500.static.mtd
+core-image-minimal-evb-ast2500.static.mtd.all.tar
+core-image-minimal-evb-ast2500.static.mtd.tar
+core-image-minimal-evb-ast2500.testdata.json
+evb-ast2500-20230710101918.all.tar
+evb-ast2500-20230710101918.tar
+fitImage
+fitImage--6.1.34+git0+aa3bee4aa1-r0-evb-ast2500-20230710101918.bin
+fitImage-evb-ast2500.bin
+fitImage-its--6.1.34+git0+aa3bee4aa1-r0-evb-ast2500-20230710101918.its
+fitImage-its-evb-ast2500
+fitImage-its-obmc-phosphor-initramfs-evb-ast2500--6.1.34+git0+aa3bee4aa1-r0-evb-ast2500-20230710101918.its
+fitImage-its-obmc-phosphor-initramfs-evb-ast2500-evb-ast2500
+fitImage-linux.bin--6.1.34+git0+aa3bee4aa1-r0-evb-ast2500-20230710101918.bin
+fitImage-linux.bin-evb-ast2500
+fitImage-obmc-phosphor-initramfs-evb-ast2500--6.1.34+git0+aa3bee4aa1-r0-evb-ast2500-20230710101918.bin
+fitImage-obmc-phosphor-initramfs-evb-ast2500-evb-ast2500
+flash-evb-ast2500
+image-bmc
+image-kernel
+image-rofs
+image-rwfs
+image-u-boot
+obmc-phosphor-initramfs-evb-ast2500-20230710101918.qemuboot.conf
+obmc-phosphor-initramfs-evb-ast2500-20230710101918.rootfs.cpio.xz
+obmc-phosphor-initramfs-evb-ast2500-20230710101918.rootfs.manifest
+obmc-phosphor-initramfs-evb-ast2500-20230710101918.spdx.tar.zst
+obmc-phosphor-initramfs-evb-ast2500-20230710101918.testdata.json
+obmc-phosphor-initramfs-evb-ast2500.cpio.xz
+obmc-phosphor-initramfs-evb-ast2500.manifest
+obmc-phosphor-initramfs-evb-ast2500.qemuboot.conf
+obmc-phosphor-initramfs-evb-ast2500.spdx.tar.zst
+obmc-phosphor-initramfs-evb-ast2500.testdata.json
+u-boot-evb-ast2500-v2019.04+gitAUTOINC+5b90e2801f-r0.bin
+u-boot-evb-ast2500.bin
+u-boot.bin
+vmlinux
+vmlinux--6.1.34+git0+aa3bee4aa1-r0-evb-ast2500-20230710101918.bin
+vmlinux-evb-ast2500.bin
+@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+Terminal output :
+U-Boot 2019.04 (May 30 2023 - 06:05:47 +0000)
+
+SOC : AST2500-A2
+RST : External
+LPC Mode : SIO:Disable
+Eth : MAC0: RGMII, , MAC1: RGMII,
+Model: AST2500 EVB
+DRAM: 496 MiB (capacity:512 MiB, VGA:16 MiB, ECC:off)
+MMC: sdhci_slot0@100: 0, sdhci_slot1@200: 1
+Loading Environment from SPI Flash... SF: Detected w25m512jv with page size 256 Bytes, erase size 4 KiB, total 64 MiB
+*** Warning - bad CRC, using default environment
+
+In: serial@1e784000
+Out: serial@1e784000
+Err: serial@1e784000
+Net:
+Warning: ethernet@1e660000 (eth0) using random MAC address - 4e:b4:59:0c:e9:59
+eth0: ethernet@1e660000
+Warning: ethernet@1e680000 (eth1) using random MAC address - 12:57:2d:b0:9a:17
+, eth1: ethernet@1e680000
+Hit any key to stop autoboot: 2 ��� 1 ��� 0
+Wrong Image Format for bootm command
+ERROR: can't get kernel image!
+ast# setenv serverip 172.27.50.35
+ast#
+ast# dhcp fitImage-obmc-phosphor-initramfs-evb-ast2500--6.1.34+git0+aa3bee4aa1-r0-evb-ast2500-20230710101918.bin
+ethernet@1e660000: link up, 100 Mbps full-duplex mac:4e:b4:59:0c:e9:59
+BOOTP broadcast 1
+DHCP client bound to address 172.27.50.178 (12 ms)
+Using ethernet@1e660000 device
+TFTP from server 172.27.50.35; our IP address is 172.27.50.178
+Filename 'fitImage-obmc-phosphor-initramfs-evb-ast2500--6.1.34+git0+aa3bee4aa1-r0-evb-ast2500-20230710101918.bin'.
+Load address: 0x83000000
+Loading: *�#################################################################
+#################################################################
+#################################################################
+#################################################################
+##########################
+1.9 MiB/s
+done
+Bytes transferred = 4195444 (400474 hex)
+ast# bootm
+
+Loading kernel from FIT Image at 83000000 ...
+Using 'conf-aspeed-ast2500-evb.dtb' configuration
+Trying 'kernel-1' kernel subimage
+Description: Linux kernel
+Type: Kernel Image
+Compression: uncompressed
+Data Start: 0x8300012c
+Data Size: 3083496 Bytes = 2.9 MiB
+Architecture: ARM
+OS: Linux
+Load Address: 0x80001000
+Entry Point: 0x80001000
+Hash algo: sha256
+Hash value: 5b3da3947af78692ab74653548dc24382ee7b37b2d12735930385d4da42b2ba8
+Verifying Hash Integrity ... sha256+ OK
+
+Loading ramdisk from FIT Image at 83000000 ...
+Using 'conf-aspeed-ast2500-evb.dtb' configuration
+Trying 'ramdisk-1' ramdisk subimage
+Description: obmc-phosphor-initramfs
+Type: RAMDisk Image
+Compression: uncompressed
+Data Start: 0x832f7aa4
+Data Size: 1082436 Bytes = 1 MiB
+Architecture: ARM
+OS: Linux
+Load Address: unavailable
+Entry Point: unavailable
+Hash algo: sha256
+Hash value: fbc0d13b005b90e4f965be986b72e2ebbfd0c7cfcfb32c91422f3bfaf40e2560
+Verifying Hash Integrity ... sha256+ OK
+
+Loading fdt from FIT Image at 83000000 ...
+Using 'conf-aspeed-ast2500-evb.dtb' configuration
+Trying 'fdt-aspeed-ast2500-evb.dtb' fdt subimage
+Description: Flattened Device Tree blob
+Type: Flat Device Tree
+Compression: uncompressed
+Data Start: 0x832f0f28
+Data Size: 27311 Bytes = 26.7 KiB
+Architecture: ARM
+Hash algo: sha256
+Hash value: dd954d39662a2217b3b1b835554d5e22d8e8729174f8c53532327f425eb55a7e
+Verifying Hash Integrity ... sha256+ OK
+Booting using the fdt blob at 0x832f0f28
+Loading Kernel Image ... OK
+Loading Ramdisk to 8fef7000, end 8ffff444 ... OK
+Loading Device Tree to 8feed000, end 8fef6aae ... OK
+
+Starting kernel ...
+
+[ 0.000000] Booting Linux on physical CPU 0x0
+[ 0.000000] Linux version 6.1.34-aa3bee4 (oe-user@oe-host) (arm-openbmc-linux-gnueabi-gcc (GCC) 13.1.1 20230520, GNU ld (GNU Binutils) 2.40.0.20230419) #1 Mon Jun 19 06:47:06 UTC 2023
+[ 0.000000] CPU: ARMv6-compatible processor [410fb767] revision 7 (ARMv7), cr=00c5387d
+[ 0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+[ 0.000000] OF: fdt: Machine model: AST2500 EVB
+[ 0.000000] Memory policy: Data cache writeback
+[ 0.000000] Reserved memory: created CMA memory pool at 0x9e000000, size 16 MiB
+[ 0.000000] OF: reserved mem: initialized node framebuffer, compatible id shared-dma-pool
+[ 0.000000] cma: Reserved 16 MiB at 0x9d000000
+[ 0.000000] Zone ranges:
+[ 0.000000] Normal [mem 0x0000000080000000-0x000000009effffff]
+[ 0.000000] Movable zone start for each node
+[ 0.000000] Early memory node ranges
+[ 0.000000] node 0: [mem 0x0000000080000000-0x000000009effffff]
+[ 0.000000] Initmem setup node 0 [mem 0x0000000080000000-0x000000009effffff]
+[ 0.000000] Built 1 zonelists, mobility grouping on. Total pages: 125984
+[ 0.000000] Kernel command line: console=ttyS4,115200n8 root=/dev/ram rw
+[ 0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[ 0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+[ 0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[ 0.000000] Memory: 458396K/507904K available (7168K kernel code, 669K rwdata, 1504K rodata, 1024K init, 150K bss, 16740K reserved, 32768K cma-reserved)
+[ 0.000000] SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[ 0.000000] ftrace: allocating 23711 entries in 47 pages
+[ 0.000000] ftrace: allocated 47 pages with 5 groups
+[ 0.000000] trace event string verifier disabled
+[ 0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[ 0.000000] i2c controller registered, irq 17
+[ 0.000000] clocksource: FTTMR010-TIMER2: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 77222644334 ns
+[ 0.000005] sched_clock: 32 bits at 25MHz, resolution 40ns, wraps every 86767015915ns
+[ 0.000079] Switching to timer-based delay loop, resolution 40ns
+[ 0.000863] Calibrating delay loop (skipped), value calculated using timer frequency.. 49.50 BogoMIPS (lpj=247500)
+[ 0.000925] pid_max: default: 32768 minimum: 301
+[ 0.002669] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[ 0.002730] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[ 0.005860] CPU: Testing write buffer coherency: ok
+[ 0.009475] cblist_init_generic: Setting adjustable number of callback queues.
+[ 0.009508] cblist_init_generic: Setting shift to 0 and lim to 1.
+[ 0.010036] cblist_init_generic: Setting shift to 0 and lim to 1.
+[ 0.010687] Setting up static identity map for 0x80100000 - 0x80100038
+[ 0.012235] ASPEED AST2500 rev A2 (04030303)
+[ 0.013717] devtmpfs: initialized
+[ 0.036693] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[ 0.036769] futex hash table entries: 256 (order: -1, 3072 bytes, linear)
+[ 0.043228] pinctrl core: initialized pinctrl subsystem
+[ 0.046689] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[ 0.048676] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[ 0.051820] hw-breakpoint: found 6 breakpoint and 1 watchpoint registers.
+[ 0.051861] hw-breakpoint: maximum watchpoint size is 4 bytes.
+[ 0.119933] mc: Linux media interface: v0.10
+[ 0.120157] videodev: Linux video capture interface: v2.00
+[ 0.120323] pps_core: LinuxPPS API ver. 1 registered
+[ 0.120347] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti giometti@linux.it
+[ 0.120425] PTP clock support registered
+[ 0.125102] clocksource: Switched to clocksource FTTMR010-TIMER2
+[ 0.209806] NET: Registered PF_INET protocol family
+[ 0.210387] IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[ 0.213068] tcp_listen_portaddr_hash hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[ 0.213169] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[ 0.213233] TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+[ 0.213329] TCP bind hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[ 0.213549] TCP: Hash tables configured (established 4096 bind 4096)
+[ 0.213840] UDP hash table entries: 256 (order: 0, 4096 bytes, linear)
+[ 0.213926] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes, linear)
+[ 0.214512] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[ 0.219234] Unpacking initramfs...
+[ 0.238633] workingset: timestamp_bits=30 max_order=17 bucket_order=0
+[ 0.249863] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[ 0.249924] jffs2: version 2.2. (SUMMARY) © 2001-2006 Red Hat, Inc.
+[ 0.285533] Serial: 8250/16550 driver, 6 ports, IRQ sharing enabled
+[ 0.298157] printk: console [ttyS4] disabled
+[ 0.298369] 1e784000.serial: ttyS4 at MMIO 0x1e784000 (irq = 20, base_baud = 1500000) is a 16550A
+[ 1.226185] printk: console [ttyS4] enabled
+[ 1.237628] timeriomem_rng 1e6e2078.hwrng: 32bits from 0x(ptrval) @ 1us
+[ 1.245596] aspeed_gfx 1e6e6000.display: assigned reserved memory node framebuffer
+[ 1.276276] random: crng init done
+[ 1.281567] [drm] Initialized aspeed-gfx-drm 1.0.0 20180319 for 1e6e6000.display on minor 0
+[ 1.310182] aspeed_gfx 1e6e6000.display: [drm] fb0: aspeed-gfx-drmd frame buffer device
+[ 1.346002] loop: module loaded
+[ 1.412970] spi-nor spi0.0: w25m512jv (32768 Kbytes)
+[ 1.546328] spi-aspeed-smc 1e620000.spi: CE0 read buswidth:2 [0x203b0641]
+[ 1.707553] 5 fixed-partitions partitions found on MTD device bmc
+[ 1.713721] Creating 5 MTD partitions on "bmc":
+[ 1.718397] 0x000000000000-0x000000060000 : "u-boot"
+[ 1.738188] 0x000000060000-0x000000080000 : "u-boot-env"
+[ 1.758221] 0x000000080000-0x0000004c0000 : "kernel"
+[ 1.776104] 0x0000004c0000-0x000001c00000 : "rofs"
+[ 1.783635] 0x000001c00000-0x000002000000 : "rwfs"
+[ 1.800362] spi-nor spi1.0: unrecognized JEDEC id bytes: 00 03 00 00 00 00
+[ 1.814257] ftgmac100 1e660000.ethernet: Read MAC address 4e:b4:59:0c:e9:59 from chip
+[ 1.846724] RTL8211E Gigabit Ethernet 1e660000.ethernet--1:00: attached PHY driver (mii_bus:phy_addr=1e660000.ethernet--1:00, irq=POLL)
+[ 1.860219] ftgmac100 1e660000.ethernet eth0: irq 22, mapped at (ptrval)
+[ 1.867863] ftgmac100 1e680000.ethernet: Read MAC address 12:57:2d:b0:9a:17 from chip
+[ 1.900461] RTL8211E Gigabit Ethernet 1e680000.ethernet--1:00: attached PHY driver (mii_bus:phy_addr=1e680000.ethernet--1:00, irq=POLL)
+[ 1.913909] ftgmac100 1e680000.ethernet eth1: irq 23, mapped at (ptrval)
+[ 2.057876] aspeed_vhub 1e6a0000.usb-vhub: Initialized virtual hub in USB2 mode
+[ 2.065936] Mass Storage Function, version: 2009/09/11
+[ 2.071156] LUN: removable file: (no medium)
+[ 2.075643] no file given for LUN0
+[ 2.079149] udc 1e6a0000.usb-vhub:p1: failed to start g_mass_storage: -22
+[ 2.086066] g_mass_storage: probe of gadget.0 failed with error -22
+[ 2.092534] Mass Storage Function, version: 2009/09/11
+[ 2.097804] LUN: removable file: (no medium)
+[ 2.102182] no file given for LUN0
+[ 2.105753] udc 1e6a0000.usb-vhub:p2: failed to start g_mass_storage: -22
+[ 2.112596] g_mass_storage: probe of gadget.1 failed with error -22
+[ 2.119111] Mass Storage Function, version: 2009/09/11
+[ 2.124306] LUN: removable file: (no medium)
+[ 2.128750] no file given for LUN0
+[ 2.132248] udc 1e6a0000.usb-vhub:p3: failed to start g_mass_storage: -22
+[ 2.139162] g_mass_storage: probe of gadget.2 failed with error -22
+[ 2.145687] Mass Storage Function, version: 2009/09/11
+[ 2.150878] LUN: removable file: (no medium)
+[ 2.155320] no file given for LUN0
+[ 2.158818] udc 1e6a0000.usb-vhub:p4: failed to start g_mass_storage: -22
+[ 2.165768] g_mass_storage: probe of gadget.3 failed with error -22
+[ 2.172228] Mass Storage Function, version: 2009/09/11
+[ 2.177504] LUN: removable file: (no medium)
+[ 2.181878] no file given for LUN0
+[ 2.185472] udc 1e6a0000.usb-vhub:p5: failed to start g_mass_storage: -22
+[ 2.192321] g_mass_storage: probe of gadget.4 failed with error -22
+[ 2.198835] UDC core: g_mass_storage: couldn't find an available UDC
+[ 2.205981] i2c_dev: i2c /dev entries driver
+[ 2.243784] Freeing initrd memory: 1060K
+[ 2.250576] at24 3-0050: 1024 byte 24c08 EEPROM, writable, 16 bytes/write
+[ 2.257720] aspeed-i2c-bus 1e78a100.i2c-bus: i2c bus 3 registered, irq 25
+[ 2.266448] aspeed-i2c-bus 1e78a300.i2c-bus: i2c bus 7 registered, irq 26
+[ 2.274239] Driver for 1-wire Dallas network protocol.
+[ 2.281991] lm75 7-004d: hwmon0: sensor 'lm75'
+[ 2.289828] SPI driver bmp280 has no spi_device_id for bosch,bmp085
+[ 2.300721] NET: Registered PF_INET6 protocol family
+[ 2.309372] Segment Routing with IPv6
+[ 2.313185] In-situ OAM (IOAM) with IPv6
+[ 2.317733] NET: Registered PF_PACKET protocol family
+[ 2.322855] 8021q: 802.1Q VLAN Support v1.8
+[ 2.334370] printk: console [netcon0] enabled
+[ 2.338911] netconsole: network logging started
+[ 2.350135] Freeing unused kernel image (initmem) memory: 1024K
+[ 2.359716] Checked W+X mappings: passed, no W+X pages found
+[ 2.365553] Run /init as init process
+rofs = mtd4 squashfs rwfs = mtd5 jffs2
+mount: mounting /dev/mtdblock4 on run/initramfs/ro failed: Invalid argument
+[ 3.322239] jffs2: notice: (85) jffs2_build_xattr_subsystem: complete building xattr subsystem, 21 of xdatum (0 unchecked, 21 orphan) and 21 of xref (21 dead, 0 orphan) found.
+find: run/initramfs/rw/cow/var/lib/systemd/random-seed: No such file or directory
+find: run/initramfs/ro/etc/os-release: No such file or directory
+sh: bad number
+[ 3.575878] overlayfs: upper fs does not support tmpfile.
+[ 3.582092] overlayfs: upper fs does not support RENAME_WHITEOUT.
+chroot: can't execute '/bin/sh': No such file or directory
+
+Unable to confirm /sbin/init is an executable non-empty file
+in merged file system mounted at /root.
+
+Change Root test failed!
+Fatal error, tri[ 3.652123] Kernel panic - not syncing: Attempted to kill init! exitcode=0x00000100
+[ 3.660894] CPU: 0 PID: 1 Comm: init Not tainted 6.1.34-aa3bee4 #1
+[ 3.667111] Hardware name: Generic DT based system
+[ 3.671935] unwind_backtrace from show_stack+0x18/0x1c
+[ 3.677267] show_stack from dump_stack_lvl+0x24/0x2c
+[ 3.682407] dump_stack_lvl from panic+0xf8/0x30c
+[ 3.687191] panic from do_exit+0x898/0x8bc
+[ 3.691444] do_exit from do_group_exit+0x40/0x84
+[ 3.696201] do_group_exit from __wake_up_parent+0x0/0x1c
+
+U-Boot 2019.04 (May 30 2023 - 06:05:47 +0000)
+
+SOC : AST2500-A2
+RST : WDT1
+LPC Mode : SIO:Disable
+Eth : MAC0: RGMII, , MAC1: RGMII,
+Model: AST2500 EVB
+DRAM: 496 MiB (capacity:512 MiB, VGA:16 MiB, ECC:off)
+MMC: sdhci_slot0@100: 0, sdhci_slot1@200: 1
+Loading Environment from SPI Flash... SF: Detected w25m512jv with page size 256 Bytes, erase size 4 KiB, total 64 MiB
+*** Warning - bad CRC, using default environment
+
+In: serial@1e784000
+Out: serial@1e784000
+Err: serial@1e784000
+Net:
+Warning: ethernet@1e660000 (eth0) using random MAC address - 4e:b4:59:0c:e9:59
+eth0: ethernet@1e660000
+Warning: ethernet@1e680000 (eth1) using random MAC address - d6:51🆎ba:b4:53
+, eth1: ethernet@1e680000
+Hit any key to stop autoboot: 2 ��� 1 ��� 0
+Wrong Image Format for bootm command
+ERROR: can't get kernel image!
+ast#
+
+
